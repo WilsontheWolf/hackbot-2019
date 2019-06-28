@@ -4,8 +4,8 @@ const unirest = require('unirest')
 module.exports = ($) => {
   const functions = {};
   
-  functions.getPrefix = (guild_id) => {
-    return $.config.defaultSettings.prefix;
+  functions.getPrefix = ($, guild_id) => {
+    return $.settings.get(guild_id).prefix || $.config.defaultSettings.prefix;
   }
   
   functions.getParameterURL = URL => {  //Made by @Khoo Hao Yit#6191
