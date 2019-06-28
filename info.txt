@@ -1,0 +1,27 @@
+Information about stuffs
+
+`$` is our $ that pass around
+$.functions = `functions.js`
+$.config
+$.events = { NAME: [functions] }
+$.commands = { NAME: { run, config, info } }
+config = {
+  enabled: true,
+  guildOnly: false,
+  aliases: [],
+  botOwnerOnly: false,
+  hidden: false
+}
+info = {
+  name: "help",
+  category: "Miscellaneous",
+  description: "Shows all commands",
+  usage: "help"
+}
+
+`functions.js` return usefull functions
+Every function in `functions.js`'s parameter start with (client, $, ...OTHER_STUFF)
+
+`commands/NAME`
+Every command must `module.exports = { run, config, info }`
+Every command's run parameter start with (client, $, message)

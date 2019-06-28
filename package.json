@@ -1,0 +1,30 @@
+{
+  "name": "Bot",
+  "version": "0.0.1",
+  "description": "Discord bot for Discord: Hackweek",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "discord.js": "^11.5.1",
+    "enmap": "^4.8.6",
+    "better-sqlite-pool": "^0.2.2",
+    "mathjs": "^5.10.3",
+    "unirest": "^0.6.0",
+    "jimp": "^0.6.4"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "repository": {
+    "url": "https://github.com/Something/Something"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bot",
+    "hackweek",
+    "discord"
+  ]
+}
