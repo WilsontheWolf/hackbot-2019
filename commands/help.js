@@ -19,7 +19,7 @@ exports.run = async (client, $, message, args) => {
           const command = commands[name];
           output += '\n' + command.info.name; 
         }
-        embed.addField(category, output);
+        embed.addField(category, output, true);
       }
       embed.setTitle('Category');
       embed.setDescription('help <category> <command>');
@@ -30,7 +30,7 @@ exports.run = async (client, $, message, args) => {
         if(!commands) return;
         for(const name in commands){
           const command = commands[name];
-          embed.addField(command.info.name, `\`${command.info.usage}\`\n${command.info.description}`);
+          embed.addField(command.info.name, `\`${command.info.usage}\`\n${command.info.description}`, true);
         }
         embed.setTitle(args[0] + ' category');
         break;
@@ -41,9 +41,9 @@ exports.run = async (client, $, message, args) => {
         if(!commands) return;
         const command = help[args[0]][args[1]];
         if(!command) return;
-        embed.addField('Aliases', command.config.aliases.join(' ||l|| '));
-        embed.addField('Guild only', command.config.guildOnly);
-        embed.addField('Bot owner only', command.config.botOwnerOnly);
+        embed.addField('Aliases', command.config.aliases.join(' ||l|| '), true);
+        embed.addField('Guild only', command.config.guildOnly, true);
+        embed.addField('Bot owner only', command.config.botOwnerOnly, true);
         embed.setDescription(`\`${command.info.usage}\`\n${command.info.description}`);
         embed.setTitle(command.info.name);
         break;
