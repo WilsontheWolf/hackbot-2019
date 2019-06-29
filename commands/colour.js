@@ -21,7 +21,7 @@ exports.config = {
   enabled: true,
   guildOnly: true,
   aliases: ['color'],
-  botOwnerOnly: true,
+  botOwnerOnly: false,
   hidden: false
 };
 
