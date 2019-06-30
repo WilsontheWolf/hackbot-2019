@@ -64,7 +64,7 @@ exports.config = {
 
 exports.info = {
   name: "widget",
-  category: "Miscellaneous",
+  category: "Server",
   description: 'Previw widgets',
   usage: "widget"
 };
