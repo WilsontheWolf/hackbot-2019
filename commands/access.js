@@ -37,7 +37,7 @@ exports.config = {
 
 exports.info = {
   name: "access",
-  category: "Miscellaneous",
+  category: "Server",
   description: "Show what channels user can access",
   usage: "user_access <user>"
 };
