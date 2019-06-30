@@ -45,7 +45,7 @@ exports.config = {
 
 exports.info = {
   name: "server_info",
-  category: "Miscellaneous",
+  category: "Discord",
   description: 'Information about the server',
   usage: "server_info"
 };
