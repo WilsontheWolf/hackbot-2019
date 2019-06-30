@@ -1,16 +1,23 @@
-/*
-Feel free to remove this if not hosting on glitch.com
-*/
+try{	//Set up process.env
+	const env = require('./.env.json');
+	for(const name in env){
+		process.env[name] = env[name];
+	}
+} catch(e) {}
 
-const express = require('express');
-const app = express();
-app.use(express.static('public'));
-app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/views/index.html');
-});
-const listener = app.listen(process.env.PORT, function() {
-  console.log('Your app is listening on port ' + listener.address().port);
-});
+/* Glitch setup */
+/* Feel free to remove this if not hosting on glitch.com */
+if(process.env.WEB == 'true'){
+	const express = require('express');
+	const app = express();
+	app.use(express.static('public'));
+	app.get('/', function(request, response) {
+		response.sendFile(__dirname + '/views/index.html');
+	});
+	const listener = app.listen(process.env.PORT, function() {
+		console.log('Your app is listening on port ' + listener.address().port);
+	});
+}
 
 /*   Bot stuff   */
 /*   Requires   */
