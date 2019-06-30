@@ -28,7 +28,7 @@ exports.config = {
 
 exports.info = {
   name: "user_info",
-  category: "Miscellaneous",
+  category: "Discord",
   description: 'Information about user',
   usage: "user_info <id>"
 };
