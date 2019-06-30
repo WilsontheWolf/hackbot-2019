@@ -65,7 +65,7 @@ exports.config = {
 
 exports.info = {
   name: "help",
-  category: "Miscellaneous",
+  category: "System",
   description: "Shows all commands",
   usage: "help <category> <command>"
 };
