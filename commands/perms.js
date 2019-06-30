@@ -56,7 +56,7 @@ exports.config = {
 
 exports.info = {
   name: "perms",
-  category: "Miscellaneous",
+  category: "Server",
   description: "Get a users perms.",
   usage: "perms <user>"
 };
