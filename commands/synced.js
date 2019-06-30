@@ -50,7 +50,7 @@ exports.config = {
 
 exports.info = {
   name: "synced",
-  category: "Miscellaneous",
+  category: "Server",
   description: 'Show channels are synced/partially synced/not synced',
   usage: "synced"
 };
