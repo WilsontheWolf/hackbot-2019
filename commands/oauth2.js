@@ -33,7 +33,7 @@ exports.config = {
 
 exports.info = {
   name: "oauth2",
-  category: "Miscellaneous",
+  category: "Discord",
   description: 'Information about oauth2',
   usage: "oauth2 <link>"
 };
